@@ -1,0 +1,42 @@
+ Customer Journey Funnel Optimization
+
+ Objective
+Analyze customer campaign data to uncover drop-off points across the marketing funnel and recommend data-driven strategies to improve conversion rates.
+
+ Dataset
+- Source: UCI Bank Marketing Dataset (`bank-additional-ready.csv`)
+- Features include demographics (age, job, education), call history (duration, previous outcome), and economic indicators.
+
+ Tools Used
+- Python (pandas, scikit-learn, matplotlib, seaborn)
+- Power BI for interactive dashboarding
+
+ Project Steps
+1. **Data Preprocessing in Python**
+   - Cleaned and split dataset into training, validation, and test sets
+   - Handled class imbalance with oversampling using `RandomOverSampler`
+   - Applied feature scaling using `StandardScaler`
+
+2. **Modeling & Evaluation**
+   - Trained a KNN classifier to predict subscription likelihood
+   - Evaluated precision, recall, and F1-score for both classes
+   - Verified performance using a classification report and confusion matrix
+
+3. **Funnel Analysis & Visualization**
+   - Simulated funnel stages: Contacted → Previously Contacted → Converted
+   - Identified ~87% drop-off from initial outreach to final conversion
+   - Exported conversion data for Power BI visualization
+
+4. **Segment Analysis**
+   - Analyzed conversion rates by job category using Python
+   - Found significant variation across segments (e.g., Job 8 had 32% conversion)
+   - Highlighted underperforming roles for campaign strategy refinement
+
+5. **Power BI Integration**
+   - Built interactive funnel and demographic dashboards
+   - Used slicers to explore conversion behavior by job, age, and education
+   - Delivered actionable visual insights for outreach optimization
+
+ Outcome
+Exposed high-impact drop-off stages and revealed job-based conversion trends. Provided data-backed recommendations to target responsive customer segments and improve overall campaign ROI.
+
